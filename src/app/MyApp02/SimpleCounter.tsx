@@ -1,5 +1,6 @@
 "use client"
 import { useEffect, useState } from "react"
+import ss from "./page.module.css"
 
 export default function SimpleCounter(props: {
 	onChange: (count: number) => void
@@ -11,8 +12,8 @@ export default function SimpleCounter(props: {
 	},[count])
 
 	return (
-		<div>
-			<h1>{count}</h1>
+		<div style={{textAlign:'center'}}>
+			<div className={ss.bigText}>{count}</div>
 			<button onClick={handleClick}>加１</button>
 		</div>
 	)

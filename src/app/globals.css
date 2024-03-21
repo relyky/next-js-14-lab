@@ -109,6 +109,10 @@ a {
   text-decoration: underline;
 }
 
+button {
+	padding: .35rem 1rem;
+}
+
 nav {
 	text-align: center;
 
@@ -123,6 +127,11 @@ nav {
 		}
 	}
 } 
+
+article[role=container] {
+	padding-left: 2rem;
+	padding-right: 2rem;
+}
 
 @media (prefers-color-scheme: dark) {
   html {

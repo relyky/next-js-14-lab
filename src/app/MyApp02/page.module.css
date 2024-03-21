@@ -1,0 +1,14 @@
+.box1 {
+  border: 1px cyan dashed;
+	padding: 2px;
+}
+
+.box2 {
+	border: 1px pink solid;
+	padding: 2px;
+}
+
+.bigText {
+	font-size: 6em;
+	padding: 1rem;
+}
