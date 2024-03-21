@@ -27,6 +27,7 @@ export default function RootLayout({
 						<li><Link href="/MyApp01">Next.js 14 摘要</Link></li>
 						<li><Link href="/MyApp02">SSR+CSR 混用</Link></li>
 						<li><Link href="/MyApp03">SSR Counter</Link></li>
+						<li><Link href="/Products">Dynamic Routing</Link></li>
 						<li><Link href="/MyGroup01/MyFunc0101">MyFunc0101</Link></li>
 						<li><Link href="/MyGroup01/MyFunc0102">MyFunc0102</Link></li>
 					</ul>
