@@ -9,13 +9,11 @@ export const metadata: Metadata = {
 export default function MyApp02() {
 
 	return (
-		<article role="container">
-			<div className={ss.box1}>
-				<h1>{metadata.title as string}</h1>
-				<h2>這部份是 SSR。<small>(外面也是 SSR)</small></h2>
-				<p>SSR 無法使用 client 端資源。</p>
-				<ClientView />
-			</div>
+		<article role="container" className={ss.box1}>
+			<h1>{metadata.title as string}</h1>
+			<h2>這部份是 SSR。<small>(外面也是 SSR)</small></h2>
+			<p>SSR 無法使用 client 端資源。</p>
+			<ClientView />
 		</article>
 	)
 }
