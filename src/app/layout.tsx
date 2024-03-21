@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import "./globals.css";
+import Link from "next/link";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -17,7 +18,18 @@ export default function RootLayout({
 	return (
 		<html lang="zh-hant">
 			<body className={inter.className}>
-				{children}
+				<nav>
+					<ul>
+						<li><Link href="/">首頁</Link></li>
+						<li><Link href="/MyApp01">Next.js 14 摘要</Link></li>
+						<li><Link href="/MyApp02">MyApp02</Link></li>
+						<li><Link href="/MyGroup01/MyFunc0101">MyFunc0101</Link></li>
+						<li><Link href="/MyGroup01/MyFunc0102">MyFunc0102</Link></li>
+					</ul>
+				</nav>
+				<main>
+					{children}
+				</main>
 			</body>
 		</html>
 	);
