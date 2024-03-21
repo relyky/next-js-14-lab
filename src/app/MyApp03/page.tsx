@@ -13,6 +13,8 @@ export default function MyApp03(props: {
 	return (
 		<article role="container">
 			<h1>{metadata.title as string}</h1>
+			<p>Server components and client components interactive together.</p>
+			<p>伺服器元件和客戶端元件一起互動。</p>
 
 			<PageClient />
 
