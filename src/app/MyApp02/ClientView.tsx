@@ -1,5 +1,5 @@
 "use client"
-import { useState } from "react";
+import { useEffect, useReducer, useState } from "react";
 import SimpleCounter from "./SimpleCounter";
 import { Metadata } from "next";
 import ss from "./page.module.css";
@@ -10,6 +10,11 @@ export const metadata: Metadata = {
 
 export default function ClientView() {
 	const [count, setCount] = useState<number | undefined>()
+	const [isMounted, dispatchMounted] = useReducer(() => true, false)
+
+	useEffect(() => dispatchMounted(), [])
+
+	if (!isMounted) return; // 不想前端初始畫面被看到。
 	return (
 		<div className={ss.box2}>
 			<h2>這部份是 CSR。</h2>
