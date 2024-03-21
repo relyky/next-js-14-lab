@@ -1,12 +1,13 @@
-import Head from "next/head";
 import ss from "./page.module.css";
+import { Metadata } from "next";
+
+export const metadata: Metadata = {
+	title: "Next.js 14 重點摘要",
+};
 
 export default function MyApp01() {
 	return (
 		<div className={ss.container}>
-			<Head>
-				<title>MyApp01</title>
-			</Head>
 			<h1>Next.js 14 重點摘要</h1>
 			<p>在 Next.js 14 版預設 SSR 渲染；預設元件都是 <a href='https://nextjs.org/docs/app/building-your-application/rendering/server-components' target='_blank'>Server Components</a>。</p>
 			<p>Server Components 無法使用 client 端運作的資源，比如：useState 等等 hooks。</p>

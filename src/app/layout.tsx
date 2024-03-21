@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
-import "./globals.css";
 import Link from "next/link";
+import "./globals.css";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -17,6 +17,9 @@ export default function RootLayout({
 }>) {
 	return (
 		<html lang="zh-hant">
+			<head>
+				<link rel="icon" type="image/svg+xml" href="/vite.svg" />
+			</head>
 			<body className={inter.className}>
 				<nav>
 					<ul>
