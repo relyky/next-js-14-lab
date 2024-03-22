@@ -125,12 +125,57 @@ nav {
 			margin-left: .2rem;
 			margin-right: .2rem;
 		}
+
+		&& > li.dropdown {
+			display: inline-block;
+			position: relative;
+
+			&& > ul {
+				display: none;
+				position: absolute;
+				background-color: grey;
+				color: inherit;
+				min-width: 160px;
+				box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+				padding: 0.5rem 0.5rem;
+				z-index: 1;	
+			}
+		
+			&&:hover > ul {
+				display:block;
+			}
+		}
 	}
 } 
 
 article[role=container] {
+	width: 100%;
+	max-width: 960px;
 	padding-left: 2rem;
 	padding-right: 2rem;
+	margin-right: auto;
+	margin-left: auto;	
+}
+
+/* dropdown */
+div[role=dropdown] {
+  position: relative;
+  display: inline-block;
+
+  && > div.content {
+		display: none;
+    position: absolute;
+    background-color: grey;
+    color: inherit;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    padding: 0.5rem 0.5rem;
+    z-index: 1;	
+  }
+
+  &&:hover > div.content {
+    display:block;
+  }
 }
 
 @media (prefers-color-scheme: dark) {

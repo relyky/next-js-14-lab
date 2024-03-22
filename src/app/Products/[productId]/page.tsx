@@ -13,12 +13,12 @@ export default function Product(props: {
 	}
 
 	return (
-		<div>
+		<article role='container'>
 			<h1>Prodcut {productId}</h1>
 			<h2><Link href='./'>回目錄</Link></h2>
 			<pre>
 				{JSON.stringify(props, null, ' ')}
 			</pre>
-		</div>
+		</article>
 	)
 }
