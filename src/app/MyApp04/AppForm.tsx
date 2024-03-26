@@ -3,15 +3,13 @@ import { useRecoilState } from "recoil";
 import { textState, formState } from "./atoms";
 import SubView from "./SubView";
 
-export default function AppForm(props: {
-	title: string
-}) {
+export default function AppForm() {
 	const [text, setText] = useRecoilState(textState);
 	const [formData, setFormData] = useRecoilState(formState);
 
 	return (
 		<article role="container">
-			<h1>{props.title}</h1>
+			<h1>MyApp04: Recoil Lab</h1>
 
 			<button style={{ margin: 4 }} onClick={handleClick}>加１</button>
 

@@ -1,6 +1,7 @@
 import { Metadata } from "next";
 import PageClient from './pageClient'
 
+//※ page.tsx 預設在伺服器端執行。
 export const metadata: Metadata = {
 	title: "SSR Counter",
 };
@@ -15,6 +16,7 @@ export default function MyApp03(props: {
 			<h1>{metadata.title as string}</h1>
 			<p>Server components and client components interactive together.</p>
 			<p>伺服器元件和客戶端元件一起互動。</p>
+			<p><code>page.tsx</code>預設在伺服器端執行。</p>
 
 			<PageClient />
 
