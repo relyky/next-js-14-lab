@@ -12,8 +12,8 @@ import { RecoilDevTools } from "recoil-toolkit";
 export default function MyApp04() {
 	return (
 		<RecoilRoot>
-      <RecoilDevTools /* 在 Release mode 也有效？ */ />
 			<AppForm title={"MyApp04: Recoil Lab"} />
+      <RecoilDevTools /* ※放在最後面才看得到初始狀態。 在 Release mode 也有效？ */ />
 		</RecoilRoot>
 	)
 }
