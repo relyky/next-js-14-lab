@@ -27,6 +27,7 @@ export default function RootLayout({
 						<li><Link href="/MyApp01">Next.js 14 摘要</Link></li>
 						<li><Link href="/MyApp02">SSR+CSR 混用</Link></li>
 						<li><Link href="/MyApp03">SSR Counter</Link></li>
+						<li><Link href="/MyApp04">Recoil Lab</Link></li>
 						<li><Link href="/Products">Dynamic Routing</Link></li>
 						<li className='dropdown'>
 							<span>MyGroup01</span>

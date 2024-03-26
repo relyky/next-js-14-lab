@@ -1,14 +1,13 @@
 "use client"
 import { useState } from "react";
-import { increaseValue } from "./pageServer";
-import ss from "./page.module.css";
+import { increaseValue } from "./serverApi";
 
-export default function MyApp03Client() {
+export default function MyApp03_PageClient() {
 	const [value, setValue] = useState(77)
 
 	return (
 		<article>
-			<h2>MyApp03 Client</h2>
+			<h2>MyApp03 PageClient</h2>
 
 			<h1>{value}</h1>
 

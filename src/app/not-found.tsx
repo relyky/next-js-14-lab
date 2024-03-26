@@ -5,7 +5,7 @@ export default function NotFound(props: {
 
 	return (
 		<article role='container'>
-			<h1>404 Page not found</h1>
+			<h1>404 Not Found</h1>
 			<p>Cound not find requested resource</p>
 			<p>Your princess is in another castle!</p>
 
