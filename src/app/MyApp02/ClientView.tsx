@@ -23,7 +23,7 @@ export default function ClientView() {
 			<h2>這部份是 CSR。</h2>
 			<p>CSR 才能使用 client 端資源。</p>
 
-			<div style={{ display: 'flex', flexFlow:'row wrap', gap:8 }}>
+			<div className={ss.flexBox}>
 				<SimpleCounter onChange={setCount} />
 				<InteractiveCounter onChange={setCount2} />
 			</div>

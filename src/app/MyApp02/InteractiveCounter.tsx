@@ -13,7 +13,7 @@ export default function InteractiveCounter(props: {
 	}, [count])
 
 	return (
-		<div className={ss.box2} style={{ flexGrow: 1, textAlign: 'center' }}>
+		<div className={ss.box2} style={{textAlign: 'center' }}>
 			<code>InteractiveCounter.tsx</code>
 			<div className={ss.bigText}>{count}</div>
 			<button onClick={handleClick}>加１</button>

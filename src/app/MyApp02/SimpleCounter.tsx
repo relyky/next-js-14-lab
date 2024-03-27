@@ -12,7 +12,7 @@ export default function SimpleCounter(props: {
 	}, [count])
 
 	return (
-		<div className={ss.box2} style={{ flexGrow: 1, textAlign: 'center' }}>
+		<div className={ss.box2} style={{textAlign: 'center' }}>
 			<code>SimpleCounter.tsx</code>
 			<div className={ss.bigText}>{count}</div>
 			<button onClick={handleClick}>加１</button>

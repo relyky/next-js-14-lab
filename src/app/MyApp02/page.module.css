@@ -12,3 +12,13 @@
 	font-size: 6em;
 	padding: 1rem;
 }
+
+.flexBox {
+	display: flex;
+	flex-flow: row wrap;
+	gap:8; 
+}
+
+.flexBox > div {
+	flex-grow: 1
+}
