@@ -21,6 +21,9 @@ export default function RootLayout({
 				<link rel="icon" type="image/svg+xml" href="/vite.svg" />
 			</head>
 			<body className={inter.className}>
+				<header style={{ backgroundColor: 'lightblue', padding: '1rem' }}>
+					<p>Header</p>
+				</header>
 				<nav>
 					<ul>
 						<li><Link href="/">首頁</Link></li>
@@ -41,6 +44,9 @@ export default function RootLayout({
 				<main>
 					{children}
 				</main>
+				<footer style={{ backgroundColor: 'ghostwhite', padding: '1rem', color: 'darkgrey' }}>
+					<p>Footer</p>
+				</footer>
 			</body>
 		</html>
 	);
