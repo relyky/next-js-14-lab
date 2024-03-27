@@ -1,0 +1,14 @@
+.highlight {
+	background-color: yellow;
+	color: black;
+}
+
+.flexBox {
+	display: flex;
+	flex-flow: row wrap;
+	gap:8; 
+}
+
+.flexBox > div {
+	flex-grow: 1
+}
