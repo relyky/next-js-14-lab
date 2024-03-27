@@ -16,7 +16,11 @@ export default function MyApp03_PageClient() {
 				setValue(newValue)
 			}}>送出</button>
 
-		</article>
+			<button style={{ marginLeft:10}} onClick={() => {
+				throw new Error("模擬出現例外！")
+			}}>丟出例外</button>
+
+		</article >
 	)
 
 }
