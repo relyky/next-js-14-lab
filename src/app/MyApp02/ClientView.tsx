@@ -17,10 +17,11 @@ export default function ClientView() {
 	if (!isMounted) return; // 不想前端初始畫面被看到。
 	return (
 		<div className={ss.box2}>
+			<code>ClientView.tsx</code>
 			<h2>這部份是 CSR。</h2>
 			<p>CSR 才能使用 client 端資源。</p>
 			<SimpleCounter onChange={setCount} />
-			<h2>inner count: {count}</h2>
+			<p>the count in the SimpleCounter: {count}</p>
 		</div>
 	)
 }
