@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
-import Link from "next/link";
 import "./globals.css";
+import NavMenu from "./NavMenu";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -24,25 +24,9 @@ export default function RootLayout({
 				<header style={{ backgroundColor: 'lightblue', padding: '1rem' }}>
 					<p>Header</p>
 				</header>
-				<nav>
-					<ul>
-						<li><Link href="/">首頁</Link></li>
-						<li><Link href="/MyApp01">Next.js 14 摘要</Link></li>
-						<li><Link href="/MyApp02">SSR+CSR 混用</Link></li>
-						<li><Link href="/MyApp03">SSR Counter</Link></li>
-						<li><Link href="/MyApp04">Recoil Lab</Link></li>
-						<li><Link href="/Products">Dynamic Routing</Link></li>
-						<li className='dropdown'>
-							<span>MyGroup01</span>
-							<ul>
-								<li><Link href="/MyGroup01/MyFunc0101">MyFunc0101</Link></li>
-								<li><Link href="/MyGroup01/MyFunc0102">MyFunc0102</Link></li>
-							</ul>
-						</li>
-					</ul>
-				</nav>
+				<NavMenu />
 				<main>
-					{children}
+						{children}
 				</main>
 				<footer style={{ backgroundColor: 'ghostwhite', padding: '1rem', color: 'darkgrey' }}>
 					<p>Footer</p>
