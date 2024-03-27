@@ -12,11 +12,11 @@ export const metadata: Metadata = {
 export default function ClientView() {
 	const [count, setCount] = useState<number | undefined>()
 	const [count2, setCount2] = useState<number | undefined>()
-	const [isMounted, dispatchMounted] = useReducer(() => true, false)
+	const [firstMounted, dispatchMounted] = useReducer(() => true, false)
 
 	useEffect(() => dispatchMounted(), [])
 
-	if (!isMounted) return; // 不想前端初始畫面被看到。
+	if (!firstMounted) return; // 不想前端初始畫面被看到。
 	return (
 		<div className={ss.box2}>
 			<code>ClientView.tsx</code>
