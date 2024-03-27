@@ -9,6 +9,7 @@ export default function PageLayout(props: Readonly<{
 }>) {
 	return (
 		<div>
+			<code>layout.tsx</code>
 			<div style={{padding:'1rem'}}>登入功能群</div>
 			{props.children}
 		</div>
