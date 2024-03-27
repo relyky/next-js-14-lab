@@ -2,10 +2,10 @@
 import { useEffect } from 'react'
 
 //※ error.tsx 必需在前端運作。
+//※ 只對元件本身 render 過程的例外有效！對元件 event handling 的例外無效。
 // [Error Handling](https://nextjs.org/docs/app/building-your-application/routing/error-handling)
-// 開發環境看不到？或許正式環境才看得到？
 
-export default function BoundaryError({
+export default function ErrorBoundary({
 	error,
 	reset,
 }: {
@@ -20,10 +20,16 @@ export default function BoundaryError({
 	return (
 		<div style={{ backgroundColor: 'red' }}>
 			<h2>Something went wrong!</h2>
-			<code>error.tsx</code>
-			<pre>
-				{JSON.stringify(error, null, ' ')}
-			</pre>
+			<dl>
+				<dt>name</dt>
+				<dd>{error.name}</dd>
+				<dt>message</dt>
+				<dd>{error.message}</dd>
+				<dt>digest</dt>
+				<dd>{error.digest}</dd>
+				{/* <dt>stack</dt>
+				<dd>{error.stack}</dd> */}
+			</dl>
 
 			<button
 				onClick={
