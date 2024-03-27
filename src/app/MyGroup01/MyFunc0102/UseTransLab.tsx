@@ -6,7 +6,7 @@ import ss from './page.module.css'
 
 //-----------------------------------------------------------------------------
 // const names:string[] = ['a00b00','a01b01']
-const names: string[] = Array(50000).fill(1).map((_,i) => `a${i}b${i}`)
+const names: string[] = Array(10000).fill(1).map((_,i) => `a${i}b${i}`)
 
 export default function UseTransLab() {
 	return (
