@@ -35,6 +35,7 @@ export default function NavMenu() {
 				<li><CustomLink href="/MyApp03">SSR Counter</CustomLink></li>
 				<li><CustomLink href="/MyApp04">Recoil Lab</CustomLink></li>
 				<li><CustomLink href="/Products">Dynamic Routing</CustomLink></li>
+				<li><CustomLink href="/Dashboard">Parallel Routing</CustomLink></li>
 				<li className='dropdown'>
 					<span>MyGroup01</span>
 					<ul>
