@@ -23,6 +23,7 @@ export default function UseTransLab() {
 	return (
 		<div>
 			<h1>Heavy UI updates as urgent</h1>
+			<h2>這部份是 CSR。</h2>
 			<div className={ss.flexBox}>
 				<FilterList names={names} />
 				<FilterListTrans names={names} />
