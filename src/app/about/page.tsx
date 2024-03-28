@@ -1,5 +1,8 @@
 import { cookies } from "next/headers";
 
+/**
+ * ※此畫面有用到 cookies(), headers(), searchParams 之一，則自動啟用 Dynamically Render。 
+ */
 export default function AboutPage() {
 	const cookieStore = cookies()
 	const themePreference = cookieStore.get('theme')
