@@ -15,6 +15,7 @@ export default function MyApp01() {
 			<p>改用新的 <a href='https://nextjs.org/docs/app' target='_blank'>App Router</a> 進行 page routing。需注意 App Router 在主機端執行。</p>
 			<p>之前的 <a href='https://nextjs.org/docs/pages/building-your-application/routing/pages-and-layouts' target='_blank'>Pages Router</a> 依然有效，可與 App Router 並肩使用。個人認為沒必要除非有向前相容的需求。</p>
 			<p>此畫面是 SSR，在主機端渲染。</p>
+			<p>Next.js 14 的 GET request 預設會 cached。若不想就要啟動 <code>dynamic mode</code>。</p>
 			<p>祝好運。上帝站在你身邊。peace。</p>
 		</article>
 	)
