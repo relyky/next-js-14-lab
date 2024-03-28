@@ -30,17 +30,17 @@ export default function NavMenu() {
 		<nav>
 			<ul>
 				<li><CustomLink href="/">首頁</CustomLink></li>
-				<li><CustomLink href="/MyApp01">Next.js 14 摘要</CustomLink></li>
-				<li><CustomLink href="/MyApp02">SSR+CSR 混用</CustomLink></li>
-				<li><CustomLink href="/MyApp03">SSR Counter</CustomLink></li>
-				<li><CustomLink href="/MyApp04">Recoil Lab</CustomLink></li>
-				<li><CustomLink href="/Products">Dynamic Routing</CustomLink></li>
-				<li><CustomLink href="/Dashboard">Parallel Routing</CustomLink></li>
+				<li><CustomLink href="/myapp01">Next.js 14 摘要</CustomLink></li>
+				<li><CustomLink href="/myapp02">SSR+CSR 混用</CustomLink></li>
+				<li><CustomLink href="/myapp03">SSR Counter</CustomLink></li>
+				<li><CustomLink href="/myapp04">Recoil Lab</CustomLink></li>
+				<li><CustomLink href="/products">Dynamic Routing</CustomLink></li>
+				<li><CustomLink href="/dashboard">Parallel Routing</CustomLink></li>
 				<li className='dropdown'>
 					<span>MyGroup01</span>
 					<ul>
-						<li><CustomLink href="/MyGroup01/MyFunc0101">MyFunc0101</CustomLink></li>
-						<li><CustomLink href="/MyGroup01/MyFunc0102">MyFunc0102</CustomLink></li>
+						<li><CustomLink href="/mygroup01/myfunc0101">MyFunc0101</CustomLink></li>
+						<li><CustomLink href="/mygroup01/myfunc0102">MyFunc0102</CustomLink></li>
 					</ul>
 				</li>
 			</ul>

@@ -4,7 +4,7 @@ export const metadata: Metadata = {
 	title: "Register",
 };
 
-export default function Register() {
+export default function RegisterPage() {
 	return (
 		<article role="container">
 			<h1>{metadata.title as string}</h1>

@@ -6,7 +6,7 @@ export const metadata: Metadata = {
 	title: "SSR + CSR 混用",
 };
 
-export default function MyApp02() {
+export default function MyApp02Page() {
 
 	return (
 		<article role="container" className={ss.box1}>

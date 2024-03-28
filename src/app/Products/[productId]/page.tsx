@@ -1,7 +1,7 @@
 import Link from "next/link";
 import { notFound } from "next/navigation";
 
-export default function Product(props: {
+export default function ProductPage(props: {
   params: { productId: string }
   searchParams: { [key: string]: string | string[] | undefined }
 }) {

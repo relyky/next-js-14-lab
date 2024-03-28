@@ -5,7 +5,7 @@ export const metadata: Metadata = {
 	title: "Next.js 14 重點摘要",
 };
 
-export default function MyApp01() {
+export default function MyApp01Page() {
 	return (
 		<article role="container">
 			<h1>{metadata.title as string}</h1>

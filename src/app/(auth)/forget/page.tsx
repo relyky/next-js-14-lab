@@ -4,7 +4,7 @@ export const metadata: Metadata = {
 	title: "ForgetPassword",
 };
 
-export default function ForgetPassword() {
+export default function ForgetPasswordPage() {
 	return (
 		<article role="container">
 			<h1>{metadata.title as string}</h1>
