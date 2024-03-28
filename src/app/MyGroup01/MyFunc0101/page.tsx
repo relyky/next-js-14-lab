@@ -1,6 +1,6 @@
 import ATextField from "@/app/_widgets/ATextField";
 
-export default function MyFunc0101() {
+export default function MyFunc0101Page() {
 	return (
 		<article role='container'>
 			<h1>MyFunc0101 哈囉世界</h1>

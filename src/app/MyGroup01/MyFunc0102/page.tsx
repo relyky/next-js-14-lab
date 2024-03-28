@@ -1,6 +1,6 @@
 import UseTransLab from "./UseTransLab";
 
-export default function MyFunc0102() {
+export default function MyFunc0102Page() {
 	return (
 		<article role='container'>
 			<h1>MyFunc0102 哈囉世界</h1>			
