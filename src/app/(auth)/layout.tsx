@@ -1,10 +1,12 @@
 
-export default function PageLayout(props: Readonly<{
+export default function AuthLayout(props: Readonly<{
 	children: React.ReactNode;
 }>) {
 	return (
 		<div style={{ outline: 'dashed 3px red' }}>
-			{props.children}
+			<main>
+				{props.children}
+			</main>
 		</div>
 	)
 }
