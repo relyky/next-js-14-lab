@@ -4,7 +4,7 @@ export default function NoLayout(props: Readonly<{
 	children: React.ReactNode;
 }>) {
 	return (
-		<div style={{ outline: 'dashed 3px red' }} >
+		<div style={{ outline: 'dashed 3px red' }}>
 			<header style={{ backgroundColor: 'lightblue', padding: '1rem' }}>
 				<NavMenu />
 			</header>

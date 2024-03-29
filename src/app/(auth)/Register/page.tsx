@@ -1,13 +1,8 @@
-import { Metadata } from "next";
-
-export const metadata: Metadata = {
-	title: "Register",
-};
 
 export default function RegisterPage() {
 	return (
 		<article role="container">
-			<h1>{metadata.title as string}</h1>
+			<h1>使用者註冊</h1>
 		</article>
 	)
 }

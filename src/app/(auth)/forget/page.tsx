@@ -1,13 +1,8 @@
-import { Metadata } from "next";
-
-export const metadata: Metadata = {
-	title: "ForgetPassword",
-};
 
 export default function ForgetPasswordPage() {
 	return (
 		<article role="container">
-			<h1>{metadata.title as string}</h1>
+			<h1>忘記密碼</h1>
 		</article>
 	)
 }

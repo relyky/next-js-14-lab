@@ -1,6 +1,6 @@
 import Link from "next/link";
 
-export default function AboutPage() {
+export default function BlogPage() {
 	return (
 		<article role="container">
 			<h1>官方部落格</h1>
