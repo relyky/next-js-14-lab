@@ -13,7 +13,7 @@ export default function MainLayout(props: Readonly<{
 				{props.children}
 			</main>
 			<footer style={{ textAlign: 'center', backgroundColor: 'ghostwhite', padding: '1rem', color: 'darkgrey' }}>
-				<p>blog footer</p>
+				<p>Footer</p>
 			</footer>
 		</div>
 	)
