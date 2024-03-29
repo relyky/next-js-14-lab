@@ -1,22 +1,26 @@
-import { useMemo } from "react"
-import styled from 'styled-jsx/style'
+"use client"
 
-const defaultStyle = {
-	padding: 8,
-	margin: 8,
-	boxShadow: '0 4px 8px 0 rgba(0,0,0,0.2)',
-	border: '1px solid #ddd',
-	display: 'flex',
-	justifyContent: 'center',
-	alignItems: 'center',
-}
+//※ styled-jsx 只在前端元件有效
 
-export default function Card(props: {
-	children: React.ReactNode,
-	style?: object
-}) {
-	const cardStyle = useMemo(() => ({ ...defaultStyle, ...props.style }), [props.style])
+export default function Command(props: Readonly<{
+	label: string
+}>) {
 	return (
-		<div style={cardStyle}>{props.children}</div>
+		<>
+			<style jsx>{`
+			  button {
+					background: green;
+				}
+
+				span {
+					color: red;
+					background: white;
+				}
+			`}</style>
+
+			<button>
+				<span>{props.label}</span>
+			</button>
+		</>
 	)
 }
