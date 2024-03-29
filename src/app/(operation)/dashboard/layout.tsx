@@ -7,13 +7,15 @@ export default function DashboardLayout(props: {
 }) {
 
 	return <div>
-		<>{props.children}</>
+		{props.children}
 		<div style={{ display: 'flex' }}>
-			<div style={{ display: 'flex', flexDirection: 'column' }}>
-				<div>{props.users}</div>
-				<div>{props.revenue}</div>
+			<div style={{ flex: '0 0 300px', display: 'flex', flexFlow: 'column' }}>
+				{props.users}
+				{props.revenue}
 			</div>
-			<div style={{ display: 'flex', flex: 1 }}>{props.notifications}</div>
+			<div style={{ flex: '1 0 auto'}}>
+				{props.notifications}
+			</div>
 		</div>
 	</div>
-}
+}  

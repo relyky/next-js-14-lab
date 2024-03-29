@@ -1,9 +1,13 @@
-import Card from "@/components/Card";
 
 export default function NotificationsPage() {
 	return (
-		<Card style={{ height: '100%' }}>
+		<section role='panel'>
 			<h1>Notifications Page</h1>
-		</Card>
+			<h1>Notifications Page</h1>
+			<h1>Notifications Page</h1>
+			<h1>Notifications Page</h1>
+			<h1>Notifications Page</h1>
+			<h1>Notifications Page</h1>
+		</section>
 	)
 }

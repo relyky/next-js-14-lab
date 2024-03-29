@@ -1,9 +1,8 @@
-import Card from "@/components/Card";
 
 export default function RevenuePage() {
 	return (
-		<Card style={{ padding: 100 }}>
+		<section role='panel'>
 			<h1>Revenue Page</h1>
-		</Card>
+		</section>
 	)
 }
