@@ -1,18 +1,19 @@
 import NavMenu from "./NavMenu";
+import ss from './layout.module.css'
 
 export default function MainLayout(props: Readonly<{
 	children: React.ReactNode;
 }>) {
 	return (
 		<div style={{ outline: 'dashed 3px red' }}>
-			<header style={{ backgroundColor: 'lightblue', padding: '1rem' }}>
+			<header className={ss.header}>
 				<p>Header</p>
 			</header>
 			<NavMenu />
 			<main>
 				{props.children}
 			</main>
-			<footer style={{ textAlign: 'center', backgroundColor: 'ghostwhite', padding: '1rem', color: 'darkgrey' }}>
+			<footer className={ss.footer}>
 				<p>Footer</p>
 			</footer>
 		</div>
