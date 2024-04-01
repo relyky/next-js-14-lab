@@ -25,7 +25,7 @@ export default function MyApp03_PageClient() {
 
 			<button style={{ marginLeft: 10 }} onClick={() => {
 				throw new Error("模擬 event handling 出現例外！此種例外無法被 ErrorBoundary 補獲。")
-			}}>丟出例外</button>
+			}}>丟出 handling 例外</button>
 
 		</article >
 	)
