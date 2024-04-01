@@ -30,6 +30,7 @@ export default function NavMenu() {
 		<nav>
 			<ul>
 				<li><CustomLink href="/">首頁</CustomLink></li>
+				<li><CustomLink href="/blog">部落格</CustomLink></li>
 				<li><CustomLink href="/main">主頁</CustomLink></li>
 				<li><CustomLink href="/myapp01">Next.js 14 摘要</CustomLink></li>
 				<li><CustomLink href="/myapp02">SSR+CSR 混用</CustomLink></li>
