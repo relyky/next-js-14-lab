@@ -1,9 +1,7 @@
 "use client"
-
 import { useReducer } from "react"
 
 //※ styled-jsx 只在前端元件有效
-
 export default function StyledJsxDemo(props: Readonly<{
 	label: string
 }>) {
