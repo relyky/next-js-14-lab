@@ -27,7 +27,7 @@ export default function LoginForm() {
 	)
 
 	async function handleSubmit() {
-		await signIn(username)
+		await signIn(username) // 因有變更 cookie 將重刷頁面。
 		setMessage('登入完成。')
 	}
 }
