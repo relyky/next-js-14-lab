@@ -2,7 +2,8 @@
 import Link from "next/link";
 import { qryDataList } from "./serverApi";
 import ss from './page.module.css'
-import { json } from "stream/consumers";
+
+export const dynamic = 'force-dynamic'
 
 export default async function ProductListPage() {
 	const dataList = await qryDataList()
