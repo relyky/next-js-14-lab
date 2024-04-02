@@ -1,8 +1,19 @@
 
 .header {
+	display: flex;
+	align-items: baseline;
 	background-color: lightblue;
 	padding: 1rem;
+
+	&& > .logo {
+		flex-grow: 1;
+	}
 }
+
+.header > div {
+	flex-grow: 0;
+}
+
 
 .footer {
 	text-align: center;
