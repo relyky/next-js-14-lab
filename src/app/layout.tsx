@@ -17,7 +17,7 @@ export default function RootLayout({
 	return (
 		<html lang="zh-hant">
 			<head>
-				<link rel="icon" type="image/svg+xml" href="/vite.svg" />
+				{/* <link rel="icon" type="image/svg+xml" href="/icon.svg" /> */}
 			</head>
 			<body className={inter.className}>
 				{children}
