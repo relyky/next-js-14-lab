@@ -6,7 +6,10 @@ export const metadata: Metadata = {
 	title: "SSR + CSR 混用",
 };
 
-export default function MyApp02Page() {
+export default function MyApp02Page(props: {
+  params: { productId: string }
+  searchParams: { [key: string]: string | string[] | undefined }
+}) {
 
 	return (
 		<article role="container" className={ss.box1}>
@@ -15,6 +18,11 @@ export default function MyApp02Page() {
 			<h2>這部份是 SSR。<small>(外面也是 SSR)</small></h2>
 			<p>SSR 無法使用 client 端資源。</p>
 			<ClientView />
+
+			<h4>Dump</h4>
+			<pre>
+				{JSON.stringify(props, null, ' ')}
+			</pre>
 		</article>
 	)
 }
