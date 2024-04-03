@@ -50,7 +50,8 @@ export default function CreatePage() {
 		console.log('新增產品成功')
 		setLoading(false)
 
-		//router.push('/products')
+		// 回目錄頁並刷新
 		router.push('./')
+		router.refresh()
 	}
 }
