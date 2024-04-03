@@ -105,3 +105,23 @@ export async function updFormData(info: MyProduct): Promise<void> {
 		throw err;
 	}
 }
+
+export async function delFormData(id: number): Promise<void> {
+	await sleepAsync(1000); //--- 正式版移除
+
+	try {
+		await doSqlConnect()
+
+		const txn = new sql.Transaction()
+		await txn.begin()
+
+		const request = new sql.Request(txn)
+		request.input('Sn', id)
+		await request.query`delete MyProduct where Sn=@Sn`
+		await txn.commit()
+	} catch (err) {
+		//--- 未實作失敗處置程序
+		console.error('addFormData FAIL', err)
+		throw err;
+	}
+}

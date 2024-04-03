@@ -1,7 +1,7 @@
 "use client"
 
 import Link from "next/link";
-import { getFormData, updFormData } from "../serverApi";
+import { delFormData, getFormData, updFormData } from "../serverApi";
 import { useEffect, useState } from "react";
 import { useRouter } from "next/navigation";
 
@@ -40,6 +40,7 @@ export default function ProductPage(props: {
 					</label>
 				</div>
 				<button type='submit'>送出</button>
+				<button type='button' onClick={handleRemove}>刪除</button>
 			</form>
 
 			<h2><Link href='./'>回目錄</Link></h2>
@@ -62,6 +63,19 @@ export default function ProductPage(props: {
 
 		await updFormData(info)
 		console.log('更新產品成功')
+		setLoading(false)
+
+		// 回目錄頁並刷新
+		router.push('./')
+		router.refresh()
+	}
+
+	async function handleRemove(event: React.MouseEvent<HTMLButtonElement>) {
+		event.preventDefault()
+		setLoading(true)
+
+		await delFormData(formData?.Sn ?? -1)
+		console.log('刪除產品成功')
 		setLoading(false)
 
 		// 回目錄頁並刷新
