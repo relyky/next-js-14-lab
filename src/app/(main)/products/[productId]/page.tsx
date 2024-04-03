@@ -1,7 +1,7 @@
 "use client"
 
 import Link from "next/link";
-import { getFormData } from "../serverApi";
+import { getFormData, updFormData } from "../serverApi";
 import { useEffect, useState } from "react";
 import { useRouter } from "next/navigation";
 
@@ -51,18 +51,18 @@ export default function ProductPage(props: {
 
 	async function handleSubmit(event: React.FormEvent<HTMLFormElement>) {
 		event.preventDefault()
-		// setLoading(true)
+		setLoading(true)
 
-		// const form = event.currentTarget
-		// const info: MyProduct = {
-		// 	Sn: 0,
-		// 	Title: form['titleA'].value,
-		// 	Status: form['status'].value
-		// }
+		const form = event.currentTarget
+		const info: MyProduct = {
+			Sn: formData?.Sn ?? -1,
+			Title: form['titleA'].value,
+			Status: form['status'].value
+		}
 
-		// await addFormData(info)
-		// console.log('新增產品成功')
-		// setLoading(false)
+		await updFormData(info)
+		console.log('更新產品成功')
+		setLoading(false)
 
 		// 回目錄頁並刷新
 		router.push('./')

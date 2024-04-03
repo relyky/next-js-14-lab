@@ -83,3 +83,25 @@ export async function getFormData(id: number): Promise<MyProduct> {
 		throw err;
 	}
 }
+
+export async function updFormData(info: MyProduct): Promise<void> {
+	await sleepAsync(1000); //--- 正式版移除
+
+	try {
+		await doSqlConnect()
+
+		const txn = new sql.Transaction()
+		await txn.begin()
+
+		const request = new sql.Request(txn)
+		request.input('Sn', info.Sn)
+		request.input('Title', info.Title)
+		request.input('Status', info.Status)
+		await request.query`update MyProduct set Title=@Title, Status=@Status where Sn=@Sn`
+		await txn.commit()
+	} catch (err) {
+		//--- 未實作失敗處置程序
+		console.error('addFormData FAIL', err)
+		throw err;
+	}
+}
