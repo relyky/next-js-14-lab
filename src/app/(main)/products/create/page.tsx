@@ -37,14 +37,17 @@ export default function CreatePage() {
 		setLoading(true)
 
 		const form = event.currentTarget
-		const info: ProductInfo = {
-			sn: 0,
-			title: form['titleA'].value,
-			status: form['status'].value
+		const info: MyProduct = {
+			Sn: 0,
+			Title: form['titleA'].value,
+			Status: form['status'].value
 		}
 
-		const newData = await addFormData(info)
-		console.log('新增產品資訊:', newData)
+		//const newData = await addFormData(info)
+		//console.log('新增產品資訊:', newData)
+
+		await addFormData(info)
+		console.log('新增產品成功')
 		setLoading(false)
 
 		//router.push('/products')

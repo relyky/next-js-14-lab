@@ -26,11 +26,11 @@ export default async function ProductListPage() {
 				</thead>
 				<tbody>
 					{dataList.map((item) => (
-						<tr key={item.sn}>
-							<td><Link href={`/products/${item.sn}`}>編輯</Link></td>
-							<td>{item.sn}</td>
-							<td>{item.title}</td>
-							<td>{item.status}</td>
+						<tr key={item.Sn}>
+							<td><Link href={`/products/${item.Sn}`}>編輯</Link></td>
+							<td>{item.Sn}</td>
+							<td>{item.Title}</td>
+							<td>{item.Status}</td>
 						</tr>
 					))}
 				</tbody>

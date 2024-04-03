@@ -9,13 +9,16 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "mssql": "^10.0.2",
     "next": "14.1.4",
     "react": "^18",
     "react-dom": "^18",
     "recoil": "^0.7.7",
-    "recoil-toolkit": "^0.3.0"
+    "recoil-toolkit": "^0.3.0",
+    "tedious": "^18.1.0"
   },
   "devDependencies": {
+    "@types/mssql": "^9.1.5",
     "@types/node": "^20",
     "@types/react": "^18",
     "@types/react-dom": "^18",
