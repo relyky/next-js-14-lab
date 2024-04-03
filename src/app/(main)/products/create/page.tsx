@@ -43,9 +43,6 @@ export default function CreatePage() {
 			Status: form['status'].value
 		}
 
-		//const newData = await addFormData(info)
-		//console.log('新增產品資訊:', newData)
-
 		await addFormData(info)
 		console.log('新增產品成功')
 		setLoading(false)
