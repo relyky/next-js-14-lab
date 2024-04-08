@@ -6,7 +6,7 @@ src\
         _lib\                 # 較高階的共用計算函式。比如：加解密計算。
             utils.ts          # 工具函式組
         _serverComponents     # 共用的 RSC,取得登入資訊等？用 async Componnet 隱藏資訊
-        (main)\
+        (main)\               # Group Routes
             main\
                 page.tsx      # 登入後主頁
             dashboard\
