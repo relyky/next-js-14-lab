@@ -209,3 +209,14 @@ dd {
     color-scheme: dark;
   }
 }
+
+/* progress indeterminate */
+progress[role=indeterminate] {
+  margin-left: 4px;
+  margin-right: 4px;
+	width: calc(100% - 8px);
+}
+
+progress[role=indeterminate]:indeterminate {
+  height: 16px;
+}

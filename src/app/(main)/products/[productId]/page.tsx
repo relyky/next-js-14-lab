@@ -26,7 +26,7 @@ export default function ProductPage(props: {
 	return (
 		<article role='container'>
 			<h1>Prodcut {productId}</h1>
-			{loading && <h1>SPIN</h1>}
+			{loading && <progress role="indeterminate" />}
 
 			<form onSubmit={handleSubmit}>
 				<div>
@@ -47,7 +47,7 @@ export default function ProductPage(props: {
 			<pre>
 				{JSON.stringify(props, null, ' ')}
 			</pre>
-		</article>
+		</article >
 	)
 
 	async function handleSubmit(event: React.FormEvent<HTMLFormElement>) {
