@@ -69,6 +69,24 @@ React Server Componnets 伺服器端元件
 
 > ※ 實務上在 MPA 多頁模式下無法共享狀態，即 Recoil 在 MPA 模式下效益很低；或說 Recoil 在 SPA 模式下才有效益。
 
+# 安裝 next.js 14
+
+```bash
+√ What is your project named? ... next-js-14-lab
+√ Would you like to use TypeScript? ... Yes
+√ Would you like to use ESLint? ... Yes
+√ Would you like to use Tailwind CSS? ... No
+√ Would you like to use src/ directory? ... Yes
+√ Would you like to use App Router? (recommended) ... Yes
+√ Would you like to customize the default import alias (@/*)? ... No
+```
+建置指令
+```bash
+npm run dev   --- debug mode => Dev Server
+npm run builg --- release build
+npm run start --- 執行 release build 好的碼
+```
+
 # Project Organization and File Colocation 
 最重要的是這些約定檔案目錄的嵌套關係。Page Nested 頁面嵌套結構。
 
