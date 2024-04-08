@@ -11,10 +11,8 @@ export default function SubView() {
 		<div style={{ padding: 4, border: 'solid 1px red' }}>
 			<p>SubView → age: {age}</p>
 
-			<StyledJsxDemo label="簡易調色盤" />
-
 			<Card>
-				我出運了
+				<input defaultValue="我出運了" />
 			</Card>
 
 			<Command label="存檔" />

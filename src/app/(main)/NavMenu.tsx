@@ -43,6 +43,7 @@ export default function NavMenu() {
 					<ul>
 						<li><CustomLink href="/mygroup01/myfunc0101">MyFunc0101</CustomLink></li>
 						<li><CustomLink href="/mygroup01/myfunc0102">MyFunc0102</CustomLink></li>
+						<li><CustomLink href="/mygroup01/myfunc0103">Syled-jsx 展示</CustomLink></li>
 					</ul>
 				</li>
 			</ul>
