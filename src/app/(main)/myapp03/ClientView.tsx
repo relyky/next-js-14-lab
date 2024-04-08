@@ -8,7 +8,7 @@ export default function MyApp03_PageClient() {
 
 	const random = utils.getRandomInt(2)
 	if (random === 1) {
-		throw new Error("模擬渲染元件時出現例外！")
+		throw new Error("模擬渲染元件時有 1/2 機率出現例外！重新刷新畫面總會成功。")
 	}
 
 	return (

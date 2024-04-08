@@ -3,7 +3,7 @@ import ClientView from './ClientView'
 
 //※ page.tsx 預設在伺服器端執行。
 export const metadata: Metadata = {
-	title: "SSR Counter",
+	title: "SSR Interactive",
 };
 
 export default function MyApp03(props: {
