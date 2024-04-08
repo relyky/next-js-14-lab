@@ -99,8 +99,8 @@ export const dynamic = ‘force-dynamic’;
 - [x]  試用 Middleware
 - [x]  部署到 IIS
 - [x]  試完 Next.js 14 所有教學 https://www.youtube.com/playlist?list=PLC3y8-rFHvwjOKd6gdf4QtV1uYNiQnruI
-- [x]  用 **node-mssql 存取 SQL Server** https://github.com/tediousjs/node-mssql?tab=readme-ov-file#tedious 底層是 Tedious
-- [ ]  **使用Tedious存取SQL Server — abort 指令太低階了** https://app.gitbook.com/o/V2QerPVDKA8Sepj61dOT/s/TcGSU3zrSsgSHyCjRHOM/next.js-shi-yong-tedious-cun-qu-sql-server
+- [x]  用 node-mssql 存取 SQL Server https://github.com/tediousjs/node-mssql?tab=readme-ov-file#tedious 底層是 Tedious
+- [ ]  ~~使用Tedious存取SQL Server — abort 指令太低階了 https://app.gitbook.com/o/V2QerPVDKA8Sepj61dOT/s/TcGSU3zrSsgSHyCjRHOM/next.js-shi-yong-tedious-cun-qu-sql-server~~
 - [ ]  用 Todo 開發 CRUD — 建議用 SSR\SPA 模式處理。
 - [x]  用 SSR\MPA 模式開發 CRUD — 不建議。除了像登入這種欄位極少的畫面外。
 - [ ]  call gRPC https://docs.nestjs.com/microservices/grpc
