@@ -32,4 +32,3 @@ export default function AppForm() {
 		setFormData(prev => ({ ...prev, age: prev.age + 1 }))
 	}
 }
-
