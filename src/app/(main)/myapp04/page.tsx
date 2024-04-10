@@ -7,8 +7,8 @@ import { RecoilDevTools } from "recoil-toolkit";
 export default function MyApp04() {
 	return (
 		<RecoilRoot>
+			{process.env.NODE_ENV === 'development' && <RecoilDevTools />}
 			<AppForm />
-			{process.env.NODE_ENV === 'development' && <RecoilDevTools /* ※放在最後面才看得到初始狀態 */ />}
 		</RecoilRoot>
 	)
 }
