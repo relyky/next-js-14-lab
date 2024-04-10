@@ -4,6 +4,34 @@
 
 登入機制參考: [Implementing stateless session for Next.js using Server Actions](https://blog.logto.io/nextjs-server-actions-stateless-session/)
 
+# 評估項目
+
+- [x]  安裝 next.js app
+- [x]  App Router
+- [x]  [useTransaction](https://react.dev/reference/react/useTransition) - https://dmitripavlutin.com/react-usetransition/
+- [x]  [useDeferredValue](https://react.dev/reference/react/useDeferredValue)
+- [ ]  client side 如何取得 “metadata” 或取不到？
+- [ ]  ~~Pages Router —- abort 用 app router 就夠了。這是向前相容用的。~~
+- [ ]  Api Router
+- [x]  Link "next/link"
+- [x]  main layout \ [RootLayout](https://nextjs.org/docs/app/building-your-application/routing/pages-and-layouts#root-layout-required)
+- [x]  app icon & page title
+- [x]  SSR 如何 CRUD
+- [x]  Recoil - state managerment, Recoil 只能在前端作用
+- [x]  Recoil Toolkit 在 Release mode 也有效？YES
+- [x]  Recoil atom 與 selector 都會進 DevTools 紀錄？YES
+- [x]  用 Recoil 取代 Redux ? 可
+- [ ]  若 Recoil 之 atom id 衝突 => exception or replace ?
+- [x]  試用 Middleware
+- [x]  部署到 IIS
+- [x]  試完 Next.js 14 所有教學 https://www.youtube.com/playlist?list=PLC3y8-rFHvwjOKd6gdf4QtV1uYNiQnruI
+- [x]  用 node-mssql 存取 SQL Server https://github.com/tediousjs/node-mssql?tab=readme-ov-file#tedious 底層是 Tedious
+- [ ]  ~~使用Tedious存取SQL Server — abort 指令太低階了 https://app.gitbook.com/o/V2QerPVDKA8Sepj61dOT/s/TcGSU3zrSsgSHyCjRHOM/next.js-shi-yong-tedious-cun-qu-sql-server~~
+- [ ]  用 Todo 開發 CRUD — 建議用 SSR\SPA 模式處理。
+- [x]  用 SSR\MPA 模式開發 CRUD — 不建議。除了像登入這種欄位極少的畫面外。
+- [ ]  call gRPC https://docs.nestjs.com/microservices/grpc
+- [x]  Authentication https://blog.logto.io/nextjs-server-actions-stateless-session/
+
 # 主要特點
 * CSR → SSR → Suspense for SSR   
 rendering 演進
@@ -40,6 +68,24 @@ React Server Componnets 伺服器端元件
 不管前端狀態輕或厚，導入 Recoil 階有偶合效果，可明確指明某部份碼就是放置 FormData。   
 
 > ※ 實務上在 MPA 多頁模式下無法共享狀態，即 Recoil 在 MPA 模式下效益很低；或說 Recoil 在 SPA 模式下才有效益。
+
+# 安裝 next.js 14
+
+```bash
+√ What is your project named? ... next-js-14-lab
+√ Would you like to use TypeScript? ... Yes
+√ Would you like to use ESLint? ... Yes
+√ Would you like to use Tailwind CSS? ... No
+√ Would you like to use src/ directory? ... Yes
+√ Would you like to use App Router? (recommended) ... Yes
+√ Would you like to customize the default import alias (@/*)? ... No
+```
+建置指令
+```bash
+npm run dev   --- debug mode => Dev Server
+npm run builg --- release build
+npm run start --- 執行 release build 好的碼
+```
 
 # Project Organization and File Colocation 
 最重要的是這些約定檔案目錄的嵌套關係。Page Nested 頁面嵌套結構。
