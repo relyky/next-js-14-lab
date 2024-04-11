@@ -1,9 +1,9 @@
-import { selectAge } from "./atoms";
-import { useRecoilValue } from 'recoil'
 import Card from "@/components/Card";
+import { selectAge } from "./atoms";
+import { useAtomValue } from "jotai";
 
 export default function SubView() {
-	const age = useRecoilValue(selectAge);
+	const age = useAtomValue(selectAge);
 
 	return (
 		<Card>

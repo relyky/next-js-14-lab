@@ -1,11 +1,11 @@
 "use client"
-import { useRecoilState } from "recoil";
+import { useAtom } from "jotai";
 import { textState, formState } from "./atoms";
 import SubView from "./SubView";
 
 export default function AppForm() {
-	const [text, setText] = useRecoilState(textState);
-	const [formData, setFormData] = useRecoilState(formState);
+	const [text, setText] = useAtom(textState);
+	const [formData, setFormData] = useAtom(formState);
 
 	return (
 		<article role="container">

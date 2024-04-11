@@ -1,4 +1,4 @@
-import { atom, selector } from "recoil";
+import { atom } from "jotai";
 
 //§ 放置此 page 範圍內全部的表單狀態。
 interface FormState {
@@ -13,21 +13,24 @@ const initFormState: FormState = {
 	age: 23,
 }
 
-export const textState = atom({
-	key: 'textState', // unique ID (with respect to other atoms/selectors)
-	default: '', // default value (aka initial value)
-});
+export const textState = atom('');
 
-export const formState = atom({
-	key: 'formState',
-	default: initFormState
-})
+export const formState = atom(initFormState)
 
-export const selectAge = selector({
-  key: 'selectAge',
-  get: ({get}) => {
+// derivedAtom / selector
+export const selectAge = atom(
+  (get) => {
 		const text = get(textState)
-    const formData = get(formState)
-    return `${formData.age} with text: ${text}` 
-  },
-});
+		const formData = get(formState)
+		return `${formData.age} with text: ${text}` 
+	},
+)
+
+// export const selectAge = selector({
+//   key: 'selectAge',
+//   get: ({get}) => {
+// 		const text = get(textState)
+//     const formData = get(formState)
+//     return `${formData.age} with text: ${text}` 
+//   },
+// });
