@@ -13,17 +13,17 @@ const initFormState: FormState = {
 	age: 23,
 }
 
-export const textState = atom('');
-textState.debugLabel = 'textState'
+export const textAtom = atom('');
+textAtom.debugLabel = 'textAtom'
 
-export const formState = atom(initFormState)
-formState.debugLabel = 'formState'
+export const formDataAtom = atom(initFormState)
+formDataAtom.debugLabel = 'formDataAtom'
 
 // derivedAtom / selector
 export const selectAge = atom(
   (get) => {
-		const text = get(textState)
-		const formData = get(formState)
+		const text = get(textAtom)
+		const formData = get(formDataAtom)
 		return `${formData.age} with text: ${text}` 
 	},
 )

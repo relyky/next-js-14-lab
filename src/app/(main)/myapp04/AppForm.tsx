@@ -1,11 +1,11 @@
 "use client"
 import { useAtom } from "jotai";
-import { textState, formState } from "./atoms";
+import { textAtom, formDataAtom } from "./atoms";
 import SubView from "./SubView";
 
 export default function AppForm() {
-	const [text, setText] = useAtom(textState);
-	const [formData, setFormData] = useAtom(formState);
+	const [text, setText] = useAtom(textAtom);
+	const [formData, setFormData] = useAtom(formDataAtom);
 
 	return (
 		<article role="container">
