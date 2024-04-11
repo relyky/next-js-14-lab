@@ -14,8 +14,10 @@ const initFormState: FormState = {
 }
 
 export const textState = atom('');
+textState.debugLabel = 'textState'
 
 export const formState = atom(initFormState)
+formState.debugLabel = 'formState'
 
 // derivedAtom / selector
 export const selectAge = atom(
@@ -25,6 +27,7 @@ export const selectAge = atom(
 		return `${formData.age} with text: ${text}` 
 	},
 )
+selectAge.debugLabel = 'selectAge'
 
 // export const selectAge = selector({
 //   key: 'selectAge',

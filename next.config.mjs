@@ -8,6 +8,10 @@ const nextConfig = {
 	// },
 	// reactStrictMode: true,
 	// swcMinify: true,
+
+  // Learn more here - https://nextjs.org/docs/advanced-features/compiler#module-transpilation
+  // Required for font css to be imported correctly 👇
+  transpilePackages: ['jotai-devtools'],	
 };
 
 export default nextConfig;
