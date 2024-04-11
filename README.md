@@ -21,7 +21,7 @@
 - [x]  Recoil Toolkit 在 Release mode 也有效？YES
 - [x]  Recoil atom 與 selector 都會進 DevTools 紀錄？YES
 - [x]  用 Recoil 取代 Redux ? 可
-- [ ]  若 Recoil 之 atom id 衝突 => exception or replace ?
+- [x]  再用 jotai 取代 Recoi
 - [x]  試用 Middleware
 - [x]  部署到 IIS
 - [x]  試完 Next.js 14 所有教學 https://www.youtube.com/playlist?list=PLC3y8-rFHvwjOKd6gdf4QtV1uYNiQnruI
