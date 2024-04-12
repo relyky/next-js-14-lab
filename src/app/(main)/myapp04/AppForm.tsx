@@ -1,34 +1,34 @@
 "use client"
-import { useAtom } from "jotai";
-import { textAtom, formDataAtom } from "./atoms";
 import SubView from "./SubView";
+import { useAccountStore } from "../../../accountStore";
+import { useFormDataStore } from "./formDataStore";
 
 export default function AppForm() {
-	const [text, setText] = useAtom(textAtom);
-	const [formData, setFormData] = useAtom(formDataAtom);
+	const account = useAccountStore()
+	const formData = useFormDataStore()
 
 	return (
 		<article role="container">
-			<h1>MyApp04: Recoil Lab</h1>
+			<h1>MyApp04: Zustand Lab</h1>
 
 			<button style={{ margin: 4 }} onClick={handleClick}>加１</button>
 
-			<input type="text" value={text} onChange={handleChange} />
+			<input type="text" value={account.userId} onChange={handleChange} />
 
 			<SubView />
 
 			<pre>
-				Echo: {text}<br />
+				Echo: {account.userName}<br />
 				FormData: {JSON.stringify(formData, null, ' ')}
 			</pre>
 		</article>
 	)
 
 	function handleChange(event: React.ChangeEvent<HTMLInputElement>) {
-		setText(event.target.value);
+		account.login(event.target.value)
 	}
 
 	function handleClick() {
-		setFormData(prev => ({ ...prev, age: prev.age + 1 }))
+		formData.increaseAge()
 	}
 }

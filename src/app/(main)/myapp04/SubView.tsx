@@ -1,9 +1,8 @@
 import Card from "@/components/Card";
-import { selectAge } from "./atoms";
-import { useAtomValue } from "jotai";
+import { useFormDataStore } from "./formDataStore";
 
 export default function SubView() {
-	const age = useAtomValue(selectAge);
+	const age = useFormDataStore(s => s.age)
 
 	return (
 		<Card>
