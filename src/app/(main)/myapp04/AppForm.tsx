@@ -9,7 +9,7 @@ export default function AppForm() {
 
 	return (
 		<article role="container">
-			<h1>MyApp04: Recoil Lab</h1>
+			<h1>MyApp04: Jotai Lab</h1>
 
 			<button style={{ margin: 4 }} onClick={handleClick}>加１</button>
 

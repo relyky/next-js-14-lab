@@ -35,7 +35,7 @@ export default function NavMenu() {
 				<li><CustomLink href="/myapp01">Next.js 14 摘要</CustomLink></li>
 				<li><CustomLink href="/myapp03">SSR Interactive</CustomLink></li>
 				<li><CustomLink href="/myapp02">SSR+CSR 混用</CustomLink></li>
-				<li><CustomLink href="/myapp04">jotai Lab</CustomLink></li>
+				<li><CustomLink href="/myapp04">Jotai Lab</CustomLink></li>
 				<li><CustomLink href="/products">Dynamic Routing</CustomLink></li>
 				<li><CustomLink href="/dashboard">Parallel Routing</CustomLink></li>
 				<li className='dropdown'>
