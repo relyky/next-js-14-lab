@@ -28,12 +28,3 @@ export const selectAge = atom(
 	},
 )
 selectAge.debugLabel = 'selectAge'
-
-// export const selectAge = selector({
-//   key: 'selectAge',
-//   get: ({get}) => {
-// 		const text = get(textState)
-//     const formData = get(formState)
-//     return `${formData.age} with text: ${text}` 
-//   },
-// });
